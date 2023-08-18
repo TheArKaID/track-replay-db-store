@@ -1,0 +1,49 @@
+{"device":{"attributes":null,"category":null,"contact":null,"disabled":false,"expirationTime":null,"geofenceIds":null,"groupId":0,"id":0,"lastUpdate":"0001-01-01T00:00:00","model":null,"name":"860896052266244","phone":null,"positionId":0,"status":"online","uniqueId":"860896052266244"},"position":{"accuracy":7,"address":"Panenjoan, Bandung, Jawa Barat, 40396, Indonesia","altitude":689,"attributes":{"battery":0,"distance":0,"ignition":false,"motion":false,"odometer":0,"power":0,"sat":7,"totalDistance":192.46069909642452},"course":260,"deviceId":"860896052266244","deviceTime":"2023-08-09T04:25:50Z","fixTime":"2023-08-09T04:25:50Z","id":0,"latitude":-6.9939816,"longitude":107.823,"network":null,"outdated":false,"protocol":"teltonika","serverTime":"2023-08-14T21:49:02.702885+07:00","speed":0,"valid":true}}
+"{\"device\":{\"attributes\":null,\"category\":null,\"contact\":null,\"disabled\":false,\"expirationTime\":null,\"geofenceIds\":null,\"groupId\":0,\"id\":0,\"lastUpdate\":\"0001-01-01T00:00:00\",\"model\":null,\"name\":\"860896052266244\",\"phone\":null,\"positionId\":0,\"status\":\"online\",\"uniqueId\":\"860896052266244\"},\"position\":{\"accuracy\":7,\"address\":\"Panenjoan, Bandung, Jawa Barat, 40396, Indonesia\",\"altitude\":689,\"attributes\":{\"battery\":0,\"distance\":0,\"ignition\":false,\"motion\":false,\"odometer\":0,\"power\":0,\"sat\":7,\"totalDistance\":192.46069909642452},\"course\":260,\"deviceId\":\"860896052266244\",\"deviceTime\":\"2023-08-09T04:25:50Z\",\"fixTime\":\"2023-08-09T04:25:50Z\",\"id\":0,\"latitude\":-6.9939816,\"longitude\":107.823,\"network\":null,\"outdated\":false,\"protocol\":\"teltonika\",\"serverTime\":\"2023-08-14T21:49:02.702885+07:00\",\"speed\":0,\"valid\":true}}"
+{
+    "device": {
+        "id": 0,
+        "name": "860896052266244",
+        "model": null,
+        "phone": null,
+        "status": "online",
+        "contact": null,
+        "groupId": 0,
+        "category": null,
+        "disabled": false,
+        "uniqueId": "860896052266244",
+        "attributes": null,
+        "lastUpdate": "0001-01-01T00:00:00",
+        "positionId": 0,
+        "geofenceIds": null,
+        "expirationTime": null
+    },
+    "position": {
+        "id": 0,
+        "speed": 0,
+        "valid": true,
+        "course": 260,
+        "address": "Panenjoan, Bandung, Jawa Barat, 40396, Indonesia",
+        "fixTime": "2023-08-09T04:25:50Z",
+        "network": null,
+        "accuracy": 7,
+        "altitude": 689,
+        "deviceId": "860896052266244",
+        "latitude": -6.9939816,
+        "outdated": false,
+        "protocol": "teltonika",
+        "longitude": 107.823,
+        "attributes": {
+            "sat": 7,
+            "power": 0,
+            "motion": false,
+            "battery": 0,
+            "ignition": false,
+            "odometer": 0,
+            "distance": 0,
+            "totalDistance": 192.46069909642452
+        },
+        "deviceTime": "2023-08-09T04:25:50Z",
+        "serverTime": "2023-08-14T21:49:02.702885+07:00"
+    }
+}
