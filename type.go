@@ -3,37 +3,37 @@ package main
 import (
 	"database/sql/driver"
 	"errors"
+	"time"
 )
 
 type NullString string
 type NullInt int
 
 type Device struct {
-	Id             string `ch:"id" json:"id"`
-	Name           string `ch:"name" json:"name"`
-	Model          string `ch:"model" json:"model"`
-	Phone          string `ch:"phone" json:"phone"`
-	Status         string `ch:"status" json:"status"`
-	Contact        string `ch:"contact" json:"contact"`
-	GroupId        int    `ch:"group_id" json:"groupId"`
-	Category       string `ch:"category" json:"category"`
-	Disabled       bool   `ch:"disabled" json:"disabled"`
-	UniqueId       string `ch:"unique_id" json:"uniqueId"`
-	Attributes     string `ch:"attributes" json:"attributes"`
-	LastUpdate     string `ch:"last_update" json:"lastUpdate"`
-	ExpirationTime string `ch:"expiration_time" json:"expirationTime"`
+	Id             string    `ch:"id" json:"id"`
+	Name           string    `ch:"name" json:"name"`
+	Model          string    `ch:"model" json:"model"`
+	Phone          string    `ch:"phone" json:"phone"`
+	Status         string    `ch:"status" json:"status"`
+	Contact        string    `ch:"contact" json:"contact"`
+	Category       string    `ch:"category" json:"category"`
+	Disabled       bool      `ch:"disabled" json:"disabled"`
+	UniqueId       string    `ch:"unique_id" json:"uniqueId"`
+	Attributes     string    `ch:"attributes" json:"attributes"`
+	LastUpdate     time.Time `ch:"last_update" json:"lastUpdate"`
+	ExpirationTime string    `ch:"expiration_time" json:"expirationTime"`
 }
 
 type Position struct {
 	Id         string  `ch:"id" json:"id"`
-	Speed      int     `ch:"speed" json:"speed"`
+	Speed      int32   `ch:"speed" json:"speed"`
 	Valid      bool    `ch:"valid" json:"valid"`
-	Course     int     `ch:"course" json:"course"`
+	Course     int32   `ch:"course" json:"course"`
 	Address    string  `ch:"address" json:"address"`
 	FixTime    string  `ch:"fix_time" json:"fixTime"`
 	Network    string  `ch:"network" json:"network"`
-	Accuracy   int     `ch:"accuracy" json:"accuracy"`
-	Altitude   int     `ch:"altitude" json:"altitude"`
+	Accuracy   int32   `ch:"accuracy" json:"accuracy"`
+	Altitude   int32   `ch:"altitude" json:"altitude"`
 	DeviceId   string  `ch:"device_id" json:"deviceId"`
 	Latitude   float64 `ch:"latitude" json:"latitude"`
 	Outdated   bool    `ch:"outdated" json:"outdated"`
@@ -42,6 +42,20 @@ type Position struct {
 	Attributes string  `ch:"attributes" json:"attributes"`
 	DeviceTime string  `ch:"device_time" json:"deviceTime"`
 	ServerTime string  `ch:"server_time" json:"serverTime"`
+}
+
+type Network struct {
+	Id         string      `ch:"id" json:"id"`
+	RadioType  string      `ch:"radio_type" json:"radioType"`
+	CellTowers []CellTower `ch:"cell_towers" json:"cellTowers"`
+	ConsiderIP bool        `ch:"consider_ip" json:"considerIp"`
+}
+
+type CellTower struct {
+	CellId            int `ch:"cell_id" json:"cellId"`
+	LocationAreaCode  int `ch:"location_area_code" json:"locationAreaCode"`
+	MobileCountryCode int `ch:"mobile_country_code" json:"mobileCountryCode"`
+	MobileNetworkCode int `ch:"mobile_network_code" json:"mobileNetworkCode"`
 }
 
 type Data struct {
